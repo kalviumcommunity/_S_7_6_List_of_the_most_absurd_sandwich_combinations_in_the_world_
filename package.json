@@ -1,0 +1,11 @@
+{
+  "name": "sandwichpart1",
+  "version": "1.0.0",
+  "description": "This app is designed to bring together a community of sandwich enthusiasts who enjoy experimenting with bizarre and unconventional sandwich combinations.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Deva Harsheni",
+  "license": "ISC"
+}
