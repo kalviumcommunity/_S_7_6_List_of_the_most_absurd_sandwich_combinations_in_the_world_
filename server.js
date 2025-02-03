@@ -9,3 +9,6 @@ app.get('/ping',(req,res) =>{
 app.listen(port,() =>{
     console.log(`Server is running at http://localhost:${port}`);
 });
+
+//Add the basic Express app code to server.js along with /ping route
+
