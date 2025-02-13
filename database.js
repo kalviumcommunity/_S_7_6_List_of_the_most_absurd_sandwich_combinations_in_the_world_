@@ -1,7 +1,8 @@
 const mongoose =require("mongoose");
+require('dotenv').config();
 
 const connectDatabase =() =>{
-    mongoose.connect(process.env.db_URl)
+    mongoose.connect(process.env.db_url)
     .then((data) =>{
         console.log(`MongoDB connected with server: ${data.connection.host}`);
     })
@@ -11,4 +12,8 @@ const connectDatabase =() =>{
     });
 };
 
-module.exports = connectDatabase;
+const getConnection=()=>{
+    return mongoose.connection.readyState===1?"Connected":"Not connected"
+}
+
+module.exports = {connectDatabase, getConnection};
