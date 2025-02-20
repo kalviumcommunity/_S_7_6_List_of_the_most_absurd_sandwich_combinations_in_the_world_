@@ -24,7 +24,6 @@ exports.getAllUsers = async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 };
-
 // ✅ Read (Get a single user by ID)
 exports.getUserById = async (req, res) => {
   try {
