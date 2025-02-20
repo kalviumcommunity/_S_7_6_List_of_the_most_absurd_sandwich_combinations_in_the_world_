@@ -22,8 +22,4 @@ This app is designed to bring together a community of sandwich enthusiasts who e
 
 This app allows users to connect, share their culinary creativity, and discover new and quirky sandwich combinations. With robust features like sorting, filtering, voting, and search functionality, the app ensures a fun and personalized experience. The tech stack is designed to be efficient and scalable, with React handling the dynamic frontend, Node.js and Express.js managing backend logic, and MongoDB providing a flexible database solution. This platform will continue to evolve as the community grows, fostering an environment where sandwich lovers can explore and share their wildest sandwich ideas.
 
-## https://s-7-6-list-of-the-most-absurd-sandwich.onrender.com/ping 
-
-## Create 10 entities along with appropriate properties with some datas for your ASAP Project.
-
 
