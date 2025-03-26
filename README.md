@@ -24,6 +24,11 @@ This app allows users to connect, share their culinary creativity, and discover 
 
 ## https://s-7-6-list-of-the-most-absurd-sandwich.onrender.com/ping 
 
-## Create 10 entities along with appropriate properties with some datas for your ASAP Project.
+## deploy link::
+   https://stellar-pie-e204ec.netlify.app/ 
 
 
+
+Create a branch locally.
+Create a component that represents one enity of your ASAP idea.
+Render the component with dummy data.
