@@ -18,7 +18,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import SandwichList from "./pages/SandwichList";
-import ViewSandwich from "./pages/ViewSandwich"; // Import the ViewSandwich page
+import ViewSandwich from "./pages/ViewSandwich"; 
+import AddSandwich from "./pages/AddSandwich";
 
 function App() {
   return (
@@ -26,7 +27,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sandwiches" element={<SandwichList />} />
-        <Route path="/sandwiches/:id" element={<ViewSandwich />} /> {/* View single sandwich */}
+        <Route path="/sandwiches/:id" element={<ViewSandwich />} /> 
+        <Route path="/add-sandwich" element={<AddSandwich />} />
       </Routes>
     </Router>
   );
