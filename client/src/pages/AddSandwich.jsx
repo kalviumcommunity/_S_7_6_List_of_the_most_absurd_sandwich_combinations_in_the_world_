@@ -92,8 +92,26 @@ function SandwichaddingForm() {
                     {editingId ? "Update Review" : "ADDED SANDWICH"}
                 </button>
             </form>
+
+            <div className="w-[600px] mt-5">
+                {reviews.map((review) => (
+                    <div key={review._id} className="bg-white p-4 shadow-md rounded-md mb-4">
+                        <p><strong>Sandwich Name:</strong> {review.name}</p>
+                        <p><strong>Absurdity Level:</strong> {review.absurdityLevel}/10</p>
+                        <p><strong>Experience:</strong> {review.experience}</p>
+                        <p><strong>Reviewed By:</strong> {review.createdBy}</p>
+                        <div className="flex gap-2 mt-3">
+                            <button onClick={() => handleEdit(review)} className="bg-blue-500 text-white px-3 py-1 rounded-md hover:bg-blue-700">
+                                Edit
+                            </button>
+                            <button onClick={() => handleDelete(review._id)} className="bg-red-500 text-white px-3 py-1 rounded-md hover:bg-red-700">
+                                Delete
+                            </button>
+                        </div>
+                    </div>
+                ))}
             </div>
-        // </div>
+         </div>
     );
 }
 
