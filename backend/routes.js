@@ -1,9 +1,10 @@
 const express = require('express');
 const router = express.Router();
 const Sandwich = require('./postschema');
+const { validateSandwich } = require('./models/validation');
 
 // ✅ Create a new sandwich (POST)
-router.post('/sandwiches', async (req, res) => {
+router.post('/sandwiches', validateSandwich, async (req, res) => {
     try {
         const newSandwich = new Sandwich(req.body);
         await newSandwich.save();
@@ -36,7 +37,7 @@ router.get('/sandwiches/:id', async (req, res) => {
 });
 
 // ✅ Update a sandwich by ID (PUT)
-router.put('/sandwiches/:id', async (req, res) => {
+router.put('/sandwiches/:id', validateSandwich, async (req, res) => {
     try {
         const updatedSandwich = await Sandwich.findByIdAndUpdate(req.params.id, req.body, { new: true });
         if (!updatedSandwich) return res.status(404).json({ message: "Sandwich not found" });
