@@ -1,0 +1,22 @@
+meta {
+  name: post
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:5000/api/sandwiches
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "name": "Th",
+      "ingredients": ["Peanut Butter", "Pickles", "Marshmallows"],
+      "absurdityLevel": 8,
+      "experience": "A bizarre mix of flavors that somehow works!",
+      "createdBy": "SandwichLover123"
+  }
+  
+}
